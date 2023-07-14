@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config';
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '790d9682fa1c4acea4b8c76766857443',
+  rootNotionPageId: 'd91df49e51034f9e864dbe36cdeda918',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -26,7 +26,7 @@ export default siteConfig({
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon:
-  'notion://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9f879028-2417-4d6f-907f-4ba76f6eb0c6%2Fme.png?table=block&id=837f6737-3fb7-46bd-bc7b-1b32204e40f6&spaceId=82d32a12-6f44-4d80-9d18-038bd7506558&width=250&userId=fb8c94da-9811-4094-b52e-6fe8c3d84a1a&cache=v2',
+    'notion://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9f879028-2417-4d6f-907f-4ba76f6eb0c6%2Fme.png?table=block&id=837f6737-3fb7-46bd-bc7b-1b32204e40f6&spaceId=82d32a12-6f44-4d80-9d18-038bd7506558&width=250&userId=fb8c94da-9811-4094-b52e-6fe8c3d84a1a&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
