@@ -2,23 +2,23 @@ import { siteConfig } from './lib/site-config';
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'd1e89e9e42eb4ebf9486ae0374039efc',
+  rootNotionPageId: '790d9682fa1c4acea4b8c76766857443',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '2skydev blog',
-  domain: 'blog.2skydev.com',
-  author: '2skydev',
+  name: 'devYuMinKim blog',
+  domain: 'devyuminkim-devlog.vercel.app',
+  author: 'devYuMinKim',
 
   // open graph metadata (optional)
-  description: '2skydev blog - developer blog',
+  description: 'devYuMinKim blog - developer blog',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
-  github: '2skydev',
+  github: 'devYuMinKim',
   // linkedin: 'fisch2',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -26,7 +26,7 @@ export default siteConfig({
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon:
-    'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d2daa37-61d0-45b6-b333-9a2bd0bdc3ee%2Fprofile_%25E1%2584%2580%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AA%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25AF_circle.png?table=block&id=d1e89e9e-42eb-4ebf-9486-ae0374039efc&spaceId=2eb5336b-2edb-42d0-bc6c-95d72d4d1b74&width=250&userId=bef10e95-202b-4b6b-9626-7af866b6f9ba&cache=v2',
+  'notion://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9f879028-2417-4d6f-907f-4ba76f6eb0c6%2Fme.png?table=block&id=837f6737-3fb7-46bd-bc7b-1b32204e40f6&spaceId=82d32a12-6f44-4d80-9d18-038bd7506558&width=250&userId=fb8c94da-9811-4094-b52e-6fe8c3d84a1a&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -53,13 +53,20 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '카테고리',
-      pageId: '36400db511474331b5c1de6918212469',
+      title: 'メイン',
+      pageId: '790d9682fa1c4acea4b8c76766857443',
     },
     {
-      title: '카테고리',
-      pageId: '36400db511474331b5c1de6918212469',
-      menuPage: true,
+      title: 'カテゴリー',
+      pageId: 'd91df49e51034f9e864dbe36cdeda918',
+    },
+    {
+      title: 'Japanese News',
+      pageId: '369a09523e3b4b76982a72609d749109',
+    },
+    {
+      title: 'Resume',
+      pageId: '64bd48e441a44f4899fb75844280c58c',
     },
   ],
 
@@ -75,7 +82,7 @@ export default siteConfig({
   contentPositionTextAlign: 'left',
 
   // default theme color
-  defaultTheme: 'system',
+  defaultTheme: 'dark',
 
   // enable comment
   enableComment: true,
