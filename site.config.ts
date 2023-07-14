@@ -53,20 +53,13 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'メイン',
-      pageId: '790d9682fa1c4acea4b8c76766857443',
+      title: '카테고리',
+      pageId: '36400db511474331b5c1de6918212469',
     },
     {
-      title: 'カテゴリー',
-      pageId: 'd91df49e51034f9e864dbe36cdeda918',
-    },
-    {
-      title: 'Japanese News',
-      pageId: '369a09523e3b4b76982a72609d749109',
-    },
-    {
-      title: 'Resume',
-      pageId: '64bd48e441a44f4899fb75844280c58c',
+      title: '카테고리',
+      pageId: '36400db511474331b5c1de6918212469',
+      menuPage: true,
     },
   ],
 
@@ -82,7 +75,7 @@ export default siteConfig({
   contentPositionTextAlign: 'left',
 
   // default theme color
-  defaultTheme: 'dark',
+  defaultTheme: 'system',
 
   // enable comment
   enableComment: true,
