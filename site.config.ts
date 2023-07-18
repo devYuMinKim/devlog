@@ -61,11 +61,11 @@ export default siteConfig({
       pageId: 'd91df49e51034f9e864dbe36cdeda918',
     },
     {
-      title: 'Japanese News',
+      title: '日本のニュース',
       pageId: '369a09523e3b4b76982a72609d749109',
     },
     {
-      title: 'Resume',
+      title: 'ポートフォリオ',
       pageId: '64bd48e441a44f4899fb75844280c58c',
     },
   ],
