@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useEffect } from 'react';
-import { Analytics } from '@vercel/analytics/react';
 
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
@@ -91,7 +90,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
           </motion.div>
         </SWRConfig>
       </RecoilRoot>
-      <Analytics />
     </>
   );
 }
