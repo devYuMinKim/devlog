@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
@@ -73,21 +74,24 @@ const swrConfig: SWRConfiguration = {
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
-    <RecoilRoot>
-      <SWRConfig value={swrConfig}>
-        <Bootstrap />
-        <GoogleAnalytics trackPageViews />
-        <PageLoading />
+    <>
+      <RecoilRoot>
+        <SWRConfig value={swrConfig}>
+          <Bootstrap />
+          <GoogleAnalytics trackPageViews />
+          <PageLoading />
 
-        <motion.div
-          key={router.pathname + router.query?.pageId || ''}
-          initial={{ x: 10, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </SWRConfig>
-    </RecoilRoot>
+          <motion.div
+            key={router.pathname + router.query?.pageId || ''}
+            initial={{ x: 10, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </SWRConfig>
+      </RecoilRoot>
+      <Analytics />
+    </>
   );
 }
