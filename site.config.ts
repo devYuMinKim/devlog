@@ -64,10 +64,10 @@ export default siteConfig({
     //   title: '日本のニュース',
     //   pageId: '369a09523e3b4b76982a72609d749109',
     // },
-    // {
-    //   title: 'ポートフォリオ',
-    //   pageId: '64bd48e441a44f4899fb75844280c58c',
-    // },
+    {
+      title: 'ポートフォリオ',
+      pageId: '64bd48e441a44f4899fb75844280c58c',
+    },
   ],
 
   // -------- custom configs (2skydev) -------------
