@@ -58,11 +58,11 @@ export async function getAllPagesInSpace(
 
               const page = await getPage(pageId);
 
-              console.log(
-                `\n---------- ${pageId} / "${
-                  page.block[pageId].value.properties['title'] || '???'
-                }" ----------\n`,
-              );
+              // console.log(
+              //   `\n---------- ${pageId} / "${
+              //     page.block[pageId].value.properties['title'] || '???'
+              //   }" ----------\n`,
+              // );
 
               if (!page) {
                 return;
