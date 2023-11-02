@@ -3,6 +3,8 @@ name: Daily Re-deploy to Vercel
 on:
   schedule:
     - cron: "0 15 * * *"
+  workflow_dispatch:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
